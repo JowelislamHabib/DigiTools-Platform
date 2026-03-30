@@ -4,7 +4,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <div className="container mx-auto">
-      <div className="navbar bg-base-100 shadow-sm h-[92px]">
+      <div className="navbar bg-base-100 pt-6">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
