@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="container mx-auto">
       <div>
-        <div className="min-h-screen mt-20 mb-20">
+        <div className="min-h-screen mt-20">
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-7xl font-extrabold">
