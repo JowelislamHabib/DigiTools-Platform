@@ -1,4 +1,5 @@
 import "./App.css";
+import GetStarted from "./components/GetStarted/GetStarted";
 import Hero from "./components/Hero/Hero";
 import NavBar from "./components/NavBar/NavBar";
 import AllProducts from "./components/Products/AllProducts";
@@ -15,6 +16,8 @@ function App() {
         <Stats />
 
         <AllProducts />
+
+        <GetStarted />
       </div>
     </>
   );
