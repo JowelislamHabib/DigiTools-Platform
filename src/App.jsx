@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import NavBar from "./components/NavBar/NavBar";
 import Pricing from "./components/Pricing/Pricing";
 import AllProducts from "./components/Products/AllProducts";
+import ReadyTransform from "./components/ReadyTransform/ReadyTransform";
 import Stats from "./components/Stats/Stats";
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <GetStarted />
 
         <Pricing />
+
+        <ReadyTransform />
       </div>
     </>
   );
