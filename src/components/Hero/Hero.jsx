@@ -17,11 +17,11 @@ const Hero = () => {
                 </p>
               </div>
 
-              <h1 className="text-7xl font-extrabold">
+              <h1 className="text-7xl font-extrabold text-[#101727]">
                 Supercharge Your <br />
                 Digital Workflow
               </h1>
-              <p className="py-6 text-lg">
+              <p className="py-6 text-lg text-[#627382]">
                 Access premium AI tools, design assets, templates, and
                 productivity <br />
                 software—all in one place. Start creating faster today.
