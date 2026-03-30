@@ -2,6 +2,7 @@ import "./App.css";
 import GetStarted from "./components/GetStarted/GetStarted";
 import Hero from "./components/Hero/Hero";
 import NavBar from "./components/NavBar/NavBar";
+import Pricing from "./components/Pricing/Pricing";
 import AllProducts from "./components/Products/AllProducts";
 import Stats from "./components/Stats/Stats";
 
@@ -18,6 +19,8 @@ function App() {
         <AllProducts />
 
         <GetStarted />
+
+        <Pricing />
       </div>
     </>
   );
