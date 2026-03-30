@@ -3,8 +3,8 @@ import React from "react";
 
 const GetStarted = () => {
   return (
-    <div className="container mx-auto mb-30">
-      <div>
+    <div className="bg-[#F9FAFC] pb-30 pt-30">
+      <div className="container mx-auto">
         <div className="text-center flex gap-4 flex-col">
           <h1 className="font-extrabold text-5xl text-[#101727]">
             Get Started in 3 Steps
