@@ -1,11 +1,14 @@
 import "./App.css";
+import Hero from "./components/Hero/Hero";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
     <>
-      <h1 className="text-primary font-bold text-4xl">
-        Testing Tailwind/DaisyUI
-      </h1>
+      <div className="container mx-auto">
+        <NavBar />
+        <Hero />
+      </div>
     </>
   );
 }
