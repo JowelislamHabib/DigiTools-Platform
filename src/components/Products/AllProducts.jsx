@@ -19,6 +19,10 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
     setCartItem(updatedCart);
   };
 
+  const handleCheckout = () => {
+    setCartItem([]);
+  };
+
   return (
     <div className="container mx-auto mt-30 mb-30 space-y-4">
       <div className="text-center flex gap-4 flex-col">
@@ -67,7 +71,11 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
           cartItem={cartItem}
         />
       ) : (
-        <Cart cartItem={cartItem} handleRemoveFromCart={handleRemoveFromCart} />
+        <Cart
+          cartItem={cartItem}
+          handleRemoveFromCart={handleRemoveFromCart}
+          handleCheckout={handleCheckout}
+        />
       )}
     </div>
   );

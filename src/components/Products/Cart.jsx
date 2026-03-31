@@ -1,7 +1,7 @@
 import { LucideTrash2 } from "lucide-react";
 import React from "react";
 
-const Cart = ({ cartItem, handleRemoveFromCart }) => {
+const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
   return (
     <div className="container mx-auto p-4 border border-neutral-100 rounded-2xl shadow-sm bg-white">
       <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
@@ -23,12 +23,11 @@ const Cart = ({ cartItem, handleRemoveFromCart }) => {
                 <div>
                   <h3 className="font-bold text-lg">{item.name}</h3>
                   <p className="text-sm text-neutral-500 line-clamp-1 max-w-xs">
-                    {item.description}
+                    ${item.price}
                   </p>
                 </div>
               </div>
               <div className="flex items-center gap-6">
-                <p className="font-bold text-xl">${item.price}</p>
                 <button
                   onClick={() => handleRemoveFromCart(item.id)}
                   className="btn btn-ghost text-error hover:bg-error/10 hover:text-error rounded-full btn-circle"
@@ -38,11 +37,19 @@ const Cart = ({ cartItem, handleRemoveFromCart }) => {
               </div>
             </div>
           ))}
-          <div className="border-t pt-4 mt-6 flex justify-between items-center">
-            <span className="text-xl font-bold">Total:</span>
-            <span className="text-2xl font-extrabold text-primary">
-              ${cartItem.reduce((total, item) => total + item.price, 0)}
-            </span>
+          <div className="border-t pt-4 mt-6">
+            <div className="flex justify-between items-center mb-6">
+              <span className="text-xl font-bold">Total:</span>
+              <span className="text-2xl font-extrabold text-primary">
+                ${cartItem.reduce((total, item) => total + item.price, 0)}
+              </span>
+            </div>
+            <button
+              onClick={handleCheckout}
+              className="btn btn-primary w-full text-white rounded-full font-bold bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-lg border-none"
+            >
+              Proceed to Checkout
+            </button>
           </div>
         </div>
       )}
