@@ -14,9 +14,9 @@ const dataFetching = async () => {
   return res.json();
 };
 
-function App() {
-  const dataPromise = dataFetching();
+const dataPromise = dataFetching();
 
+function App() {
   const [cartItem, setCartItem] = useState([]);
 
   return (
