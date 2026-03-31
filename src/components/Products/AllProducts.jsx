@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Cards from "./Cards";
 import { use } from "react";
 import Cart from "./Cart";
+import { toast } from "react-toastify";
 
 const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
   const allData = use(dataPromise);
@@ -11,16 +12,21 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
     const isExist = cartItem.find((product) => product.id === item.id);
     if (!isExist) {
       setCartItem([...cartItem, item]);
+      toast.success(`${item.name} added to cart!`);
+    } else {
+      toast.info(`${item.name} is already in the cart!`);
     }
   };
 
   const handleRemoveFromCart = (id) => {
     const updatedCart = cartItem.filter((item) => item.id !== id);
     setCartItem(updatedCart);
+    toast.error(`${item.name} removed from cart!`);
   };
 
   const handleCheckout = () => {
     setCartItem([]);
+    toast.success("Successfully Checked out!");
   };
 
   return (
