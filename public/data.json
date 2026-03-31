@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "Basic resume templates designed for fresh graduates and entry-level job seekers.",
+    "price": 9,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["20+ templates", "Simple customization", "Export to PDF"],
+    "image": "../src/assets/products/cv.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with ATS optimization and modern designs.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Cover letter builder"],
+    "image": "../src/assets/products/pro-cv.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Boost Pack",
+    "description": "Complete toolkit to enhance your job applications and interviews.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Resume + Cover Letter",
+      "Interview tips",
+      "LinkedIn optimization"
+    ],
+    "image": "../src/assets/products/CareerBoostPack.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Website Builder",
+    "description": "Develop a visually compelling personal portfolio website without requiring programming skills.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Drag & drop builder", "Custom domains", "Responsive design"],
+    "image": "../src/assets/products/PortfolioWebsiteBuilder.png"
+  },
+  {
+    "id": 5,
+    "name": "Freelancer Toolkit",
+    "description": "All-in-one toolkit for freelancers to manage clients and projects.",
+    "price": 29,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Invoice generator", "Project tracker", "Client management"],
+    "image": "../src/assets/products/FreelancerToolkit.png"
+  },
+  {
+    "id": 6,
+    "name": "Design Assets Bundle",
+    "description": "Extensive repository of user interface kits, icon sets, and design resource assets.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["5000+ icons", "UI kits", "Figma & PSD files"],
+    "image": "../src/assets/products/design-tool.png"
+  },
+  {
+    "id": 7,
+    "name": "Developer Pro Pack",
+    "description": "Premium tools and templates designed for contemporary web development professionals.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Code snippets", "React templates", "API integrations"],
+    "image": "../src/assets/products/DeveloperProPack.png"
+  },
+  {
+    "id": 8,
+    "name": "Ultimate SaaS Kit",
+    "description": "Complete SaaS starter kit with authentication and dashboard UI.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Auth system", "Dashboard UI", "Backend integration"],
+    "image": "../src/assets/products/Saas.png"
+  }
+]

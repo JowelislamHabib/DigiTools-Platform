@@ -1,7 +1,10 @@
 import React from "react";
 import Cards from "./Cards";
+import { use } from "react";
 
-const AllProducts = () => {
+const AllProducts = ({ dataPromise }) => {
+  const allData = use(dataPromise);
+
   return (
     <div className="container mx-auto mt-30 mb-30 space-y-4">
       <div className="text-center flex gap-4 flex-col">
@@ -32,7 +35,7 @@ const AllProducts = () => {
           />
         </div>
       </div>
-      <Cards />
+      <Cards allData={allData} />
     </div>
   );
 };

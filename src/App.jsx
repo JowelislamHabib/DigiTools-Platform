@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import GetStarted from "./components/GetStarted/GetStarted";
@@ -8,7 +9,14 @@ import AllProducts from "./components/Products/AllProducts";
 import ReadyTransform from "./components/ReadyTransform/ReadyTransform";
 import Stats from "./components/Stats/Stats";
 
+const dataFetching = async () => {
+  const res = await fetch("/data.json");
+  return res.json();
+};
+
 function App() {
+  const dataPromise = dataFetching();
+
   return (
     <>
       <div>
@@ -18,8 +26,11 @@ function App() {
         <Hero />
         <Stats />
 
-        <AllProducts />
-
+        <Suspense
+          fallback={<span className="loading loading-ring loading-xl"></span>}
+        >
+          <AllProducts dataPromise={dataPromise} />
+        </Suspense>
         <GetStarted />
 
         <Pricing />
