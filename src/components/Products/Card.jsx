@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const Card = ({ item }) => {
-  const [buyNowbtn, setBuyNowbtn] = useState("Buy Now");
+const Card = ({ item, handleAddToCart, cartItem }) => {
+  const isAdded = cartItem.find((product) => product.id === item.id);
 
   return (
     <div>
@@ -37,7 +37,7 @@ const Card = ({ item }) => {
           </div>
           <ul className="mt-6 flex flex-col gap-2 text-xs">
             {item.features.map((feat, index) => (
-              <li>
+              <li key={index}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -58,10 +58,10 @@ const Card = ({ item }) => {
           </ul>
           <div className="mt-6">
             <button
-              onClick={() => setBuyNowbtn("purchased")}
+              onClick={() => handleAddToCart(item)}
               className="btn btn-primary btn-block rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6]"
             >
-              {buyNowbtn === "Buy Now" ? "Buy Now" : "Purchased"}
+              {isAdded ? "Added to cart" : "Buy Now"}
             </button>
           </div>
         </div>

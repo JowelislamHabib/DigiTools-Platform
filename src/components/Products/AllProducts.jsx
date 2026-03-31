@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Cards from "./Cards";
 import { use } from "react";
+import Cart from "./Cart";
 
-const AllProducts = ({ dataPromise }) => {
+const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
   const allData = use(dataPromise);
+  const [activeTab, setActiveTab] = useState("products");
+
+  const handleAddToCart = (item) => {
+    const isExist = cartItem.find((product) => product.id === item.id);
+    if (!isExist) {
+      setCartItem([...cartItem, item]);
+    }
+  };
 
   return (
     <div className="container mx-auto mt-30 mb-30 space-y-4">
@@ -25,17 +34,28 @@ const AllProducts = ({ dataPromise }) => {
             name="my_tabs_1"
             className="tab rounded-full text-base font-bold pl-6 pr-6 "
             aria-label="Products"
+            onChange={() => setActiveTab("products")}
             defaultChecked
           />
           <input
             type="radio"
             name="my_tabs_1"
             className="tab rounded-full text-base font-bold pl-6 pr-6"
-            aria-label="Cart (2)"
+            aria-label={`Cart (${cartItem.length})`}
+            onChange={() => setActiveTab("cart")}
           />
         </div>
       </div>
-      <Cards allData={allData} />
+
+      {activeTab === "products" ? (
+        <Cards
+          allData={allData}
+          handleAddToCart={handleAddToCart}
+          cartItem={cartItem}
+        />
+      ) : (
+        <Cart cartItem={cartItem} />
+      )}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import GetStarted from "./components/GetStarted/GetStarted";
@@ -17,10 +17,12 @@ const dataFetching = async () => {
 function App() {
   const dataPromise = dataFetching();
 
+  const [cartItem, setCartItem] = useState([]);
+
   return (
     <>
       <div>
-        <NavBar />
+        <NavBar cartItem={cartItem} />
         <div className="divider"></div>
 
         <Hero />
@@ -29,8 +31,13 @@ function App() {
         <Suspense
           fallback={<span className="loading loading-ring loading-xl"></span>}
         >
-          <AllProducts dataPromise={dataPromise} />
+          <AllProducts
+            dataPromise={dataPromise}
+            cartItem={cartItem}
+            setCartItem={setCartItem}
+          />
         </Suspense>
+
         <GetStarted />
 
         <Pricing />
