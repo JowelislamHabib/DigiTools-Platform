@@ -14,6 +14,11 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
     }
   };
 
+  const handleRemoveFromCart = (id) => {
+    const updatedCart = cartItem.filter((item) => item.id !== id);
+    setCartItem(updatedCart);
+  };
+
   return (
     <div className="container mx-auto mt-30 mb-30 space-y-4">
       <div className="text-center flex gap-4 flex-col">
@@ -32,7 +37,11 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
           <input
             type="radio"
             name="my_tabs_1"
-            className="tab rounded-full text-base font-bold pl-6 pr-6 "
+            className={`tab rounded-full text-base font-bold pl-6 pr-6 ${
+              activeTab === "products"
+                ? "bg-linear-to-l from-[#9514fa] to-[#4f39f6] text-white!"
+                : ""
+            }`}
             aria-label="Products"
             onChange={() => setActiveTab("products")}
             defaultChecked
@@ -40,7 +49,11 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
           <input
             type="radio"
             name="my_tabs_1"
-            className="tab rounded-full text-base font-bold pl-6 pr-6"
+            className={`tab rounded-full text-base font-bold pl-6 pr-6 ${
+              activeTab === "cart"
+                ? "bg-linear-to-l from-[#9514fa] to-[#4f39f6] text-white!"
+                : ""
+            }`}
             aria-label={`Cart (${cartItem.length})`}
             onChange={() => setActiveTab("cart")}
           />
@@ -54,7 +67,7 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
           cartItem={cartItem}
         />
       ) : (
-        <Cart cartItem={cartItem} />
+        <Cart cartItem={cartItem} handleRemoveFromCart={handleRemoveFromCart} />
       )}
     </div>
   );

@@ -15,13 +15,13 @@ const NavBar = ({ cartItem }) => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {" "}
+                
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />
               </svg>
             </div>
             <ul
@@ -107,8 +107,8 @@ const NavBar = ({ cartItem }) => {
         <div className="navbar-end gap-4">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">
-              <LucideShoppingCart />{" "}
-              <span className="badge badge-sm indicator-item">
+              <LucideShoppingCart />
+              <span className="badge badge-sm indicator-item bg-purple-600 text-white rounded-full">
                 {cartItem.length}
               </span>
             </div>
