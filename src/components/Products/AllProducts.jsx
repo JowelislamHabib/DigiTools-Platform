@@ -30,9 +30,9 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
   };
 
   return (
-    <div className="container mx-auto mt-30 mb-30 space-y-4 ">
+    <div className="container mx-auto mt-30 mb-30 space-y-4 px-4">
       <div className="text-center flex gap-4 flex-col ">
-        <h1 className="font-extrabold text-5xl text-[#101727]">
+        <h1 className="font-extrabold text-4xl lg:text-5xl text-[#101727]">
           Premium Digital Tools
         </h1>
         <p className="text-[#627382] text-base">
@@ -42,12 +42,12 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
           to boost your productivity and creativity.
         </p>
       </div>
-      <div className="flex justify-center ">
+      <div className="flex justify-center w-full pb-2">
         <div className="tabs tabs-box rounded-full w-fit">
           <input
             type="radio"
             name="my_tabs_1"
-            className={`tab rounded-full text-base font-bold pl-6 pr-6 ${
+            className={`tab rounded-full text-base font-bold w-36 sm:w-48 whitespace-nowrap ${
               activeTab === "products"
                 ? "bg-linear-to-l from-[#9514fa] to-[#4f39f6] text-white!"
                 : ""
@@ -59,12 +59,12 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
           <input
             type="radio"
             name="my_tabs_1"
-            className={`tab rounded-full text-base font-bold pl-6 pr-6 ${
+            className={`tab rounded-full text-base font-bold w-36 sm:w-48 whitespace-nowrap ${
               activeTab === "cart"
                 ? "bg-linear-to-l from-[#9514fa] to-[#4f39f6] text-white!"
                 : ""
             }`}
-            aria-label={`Cart (${cartItem.length})`}
+             aria-label={`Cart (${cartItem.length})`}
             onChange={() => setActiveTab("cart")}
           />
         </div>

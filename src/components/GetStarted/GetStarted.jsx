@@ -4,9 +4,9 @@ import React from "react";
 const GetStarted = () => {
   return (
     <div className="bg-[#F9FAFC] pb-30 pt-30">
-      <div className="container mx-auto">
+      <div className="container mx-auto p-2">
         <div className="text-center flex gap-4 flex-col">
-          <h1 className="font-extrabold text-5xl text-[#101727]">
+          <h1 className="font-extrabold text-4xl lg:text-5xl text-[#101727]">
             Get Started in 3 Steps
           </h1>
           <p className="text-[#627382] text-base">

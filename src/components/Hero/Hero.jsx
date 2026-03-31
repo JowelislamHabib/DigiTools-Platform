@@ -5,7 +5,7 @@ import dotImg from "../../assets/dot.svg";
 
 const Hero = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto p-2">
       <div>
         <div className="mt-20 mb-20">
           <div className="flex flex-wrap gap-4 lg:flex lg:justify-between lg:items-center">
@@ -18,7 +18,7 @@ const Hero = () => {
               </div>
 
               <div className="flex flex-wrap flex-col">
-                <h1 className="text-5xl lg:text-7xl font-extrabold text-[#101727] leading-24">
+                <h1 className="text-4xl lg:text-7xl font-extrabold text-[#101727] lg:leading-24">
                   Supercharge Your <br />
                   Digital Workflow
                 </h1>

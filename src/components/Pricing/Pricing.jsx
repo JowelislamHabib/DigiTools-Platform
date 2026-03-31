@@ -2,9 +2,9 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="container mx-auto mt-30 mb-30">
+    <div className="container mx-auto mt-30 mb-30 p-2">
       <div className="text-center flex gap-4 flex-col mb-10">
-        <h1 className="font-extrabold text-5xl text-[#101727]">
+        <h1 className="font-extrabold text-4xl lg:text-5xl text-[#101727]">
           Simple, Transparent Pricing
         </h1>
         <p className="text-[#627382] text-base">

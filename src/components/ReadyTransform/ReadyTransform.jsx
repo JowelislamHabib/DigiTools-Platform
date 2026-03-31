@@ -5,8 +5,8 @@ const ReadyTransform = () => {
     <div>
       <div>
         <div className="bg-base-200 bg-linear-to-l from-[#9514fa] to-[#4f39f6] pt-30 pb-30">
-          <div className="text-center space-y-4">
-            <h1 className="font-extrabold text-5xl text-white">
+          <div className="container mx-auto text-center space-y-4 p-2">
+            <h1 className="font-extrabold text-4xl lg:text-5xl text-white">
               Ready to Transform Your Workflow?
             </h1>
             <p className="py-6 text-neutral-200">

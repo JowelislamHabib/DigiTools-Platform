@@ -10,7 +10,7 @@ import ReadyTransform from "./components/ReadyTransform/ReadyTransform";
 import Stats from "./components/Stats/Stats";
 
 const dataFetching = async () => {
-  const res = await fetch("/data.json");
+  const res = await fetch("./data.json");
   return res.json();
 };
 
@@ -31,7 +31,7 @@ function App() {
         <Suspense
           fallback={<div className="flex justify-center item-center min-h-screen"><h1 className="loading loading-ring loading-xl"></h1></div>}
         >
-          <AllProducts
+          <AllProducts 
             dataPromise={dataPromise}
             cartItem={cartItem}
             setCartItem={setCartItem}
