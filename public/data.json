@@ -7,7 +7,14 @@
     "period": "one-time",
     "tag": "new",
     "tagType": "new",
-    "features": ["20+ templates", "Simple customization", "Export to PDF"],
+    "features": [
+      "20+ templates",
+      "Simple customization",
+      "Export to PDF",
+      "Mobile-friendly",
+      "Email support",
+      "Free updates"
+    ],
     "image": "../src/assets/products/cv.png"
   },
   {
@@ -18,7 +25,14 @@
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
-    "features": ["100+ templates", "ATS optimization", "Cover letter builder"],
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Cover letter builder",
+      "LinkedIn import",
+      "Live preview",
+      "Grammar check"
+    ],
     "image": "../src/assets/products/pro-cv.png"
   },
   {
@@ -32,7 +46,10 @@
     "features": [
       "Resume + Cover Letter",
       "Interview tips",
-      "LinkedIn optimization"
+      "LinkedIn optimization",
+      "Job tracker",
+      "Salary guide",
+      "Email templates"
     ],
     "image": "../src/assets/products/CareerBoostPack.png"
   },
@@ -44,7 +61,14 @@
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
-    "features": ["Drag & drop builder", "Custom domains", "Responsive design"],
+    "features": [
+      "Drag & drop builder",
+      "Custom domains",
+      "Responsive design",
+      "SEO tools",
+      "Web analytics",
+      "Fast hosting"
+    ],
     "image": "../src/assets/products/PortfolioWebsiteBuilder.png"
   },
   {
@@ -55,7 +79,14 @@
     "period": "yearly",
     "tag": "best seller",
     "tagType": "best seller",
-    "features": ["Invoice generator", "Project tracker", "Client management"],
+    "features": [
+      "Invoice generator",
+      "Project tracker",
+      "Client management",
+      "Tax planner",
+      "Time tracking",
+      "Contract builder"
+    ],
     "image": "../src/assets/products/FreelancerToolkit.png"
   },
   {
@@ -66,7 +97,14 @@
     "period": "one-time",
     "tag": "new",
     "tagType": "new",
-    "features": ["5000+ icons", "UI kits", "Figma & PSD files"],
+    "features": [
+      "5000+ icons",
+      "UI kits",
+      "Figma & PSD files",
+      "Font pairings",
+      "Color palettes",
+      "Texture overlays"
+    ],
     "image": "../src/assets/products/design-tool.png"
   },
   {
@@ -77,7 +115,14 @@
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
-    "features": ["Code snippets", "React templates", "API integrations"],
+    "features": [
+      "Code snippets",
+      "React templates",
+      "API integrations",
+      "Docker configs",
+      "Testing suites",
+      "DevDocs access"
+    ],
     "image": "../src/assets/products/DeveloperProPack.png"
   },
   {
@@ -88,7 +133,87 @@
     "period": "one-time",
     "tag": "best seller",
     "tagType": "best seller",
-    "features": ["Auth system", "Dashboard UI", "Backend integration"],
+    "features": [
+      "Auth system",
+      "Dashboard UI",
+      "Backend integration",
+      "Stripe checkout",
+      "Landing pages",
+      "Admin panel"
+    ],
     "image": "../src/assets/products/Saas.png"
+  },
+  {
+    "id": 9,
+    "name": "AI Content Writer",
+    "description": "Generate high-quality blog posts and social media content using advanced AI.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "AI Blog Generator",
+      "Plagiarism checker",
+      "Multi-language support",
+      "Tone adjustment",
+      "Image gen",
+      "Post scheduler"
+    ],
+    "image": "../src/assets/products/AIContentWriter.png"
+  },
+  {
+    "id": 10,
+    "name": "SEO Automation Tool",
+    "description": "Automate your keyword research and track your search engine rankings easily.",
+    "price": 45,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Keyword tracking",
+      "Backlink analysis",
+      "Site audit reports",
+      "Competitor edge",
+      "Rank monitor",
+      "Niche research"
+    ],
+    "image": "../src/assets/products/SEOAutomationTool.png"
+  },
+  {
+    "id": 11,
+    "name": "Cloud Storage Pro",
+    "description": "Secure and scalable cloud storage solutions for teams and businesses.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited storage",
+      "End-to-end encryption",
+      "Team collaboration",
+      "Auto sync",
+      "File recovery",
+      "Role access"
+    ],
+    "image": "../src/assets/products/CloudStoragePro.png"
+  },
+  {
+    "id": 12,
+    "name": "E-learning Platform",
+    "description": "Create and sell online courses with our powerful learning management system.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Course builder",
+      "Student tracking",
+      "Payment integration",
+      "Quiz system",
+      "Certificate gen",
+      "Video hosting"
+    ],
+    "image": "../src/assets/products/E-learning.png"
   }
 ]
+

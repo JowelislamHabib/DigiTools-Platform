@@ -5,7 +5,7 @@ const Card = ({ item, handleAddToCart, cartItem }) => {
 
   return (
     <div>
-      <div className="card  bg-base-100 shadow-sm">
+      <div className="card bg-base-100 shadow-sm border-2 border-transparent hover:border-[#9514fa] transition-all duration-300">
         <div className="card-body">
           <div className="flex justify-end">
             <span
@@ -59,7 +59,7 @@ const Card = ({ item, handleAddToCart, cartItem }) => {
           <div className="mt-6">
             <button
               onClick={() => handleAddToCart(item)}
-              className="btn btn-primary btn-block rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6]"
+              className="btn btn-primary border-0 btn-block rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6]"
             >
               {isAdded ? "Added to cart" : "Buy Now"}
             </button>

@@ -29,7 +29,7 @@ function App() {
         <Stats />
 
         <Suspense
-          fallback={<span className="loading loading-ring loading-xl"></span>}
+          fallback={<div className="flex justify-center item-center min-h-screen"><h1 className="loading loading-ring loading-xl"></h1></div>}
         >
           <AllProducts
             dataPromise={dataPromise}

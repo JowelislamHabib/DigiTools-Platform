@@ -30,8 +30,8 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
   };
 
   return (
-    <div className="container mx-auto mt-30 mb-30 space-y-4">
-      <div className="text-center flex gap-4 flex-col">
+    <div className="container mx-auto mt-30 mb-30 space-y-4 ">
+      <div className="text-center flex gap-4 flex-col ">
         <h1 className="font-extrabold text-5xl text-[#101727]">
           Premium Digital Tools
         </h1>
@@ -42,7 +42,7 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
           to boost your productivity and creativity.
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <div className="tabs tabs-box rounded-full w-fit">
           <input
             type="radio"

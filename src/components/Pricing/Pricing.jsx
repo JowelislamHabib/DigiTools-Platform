@@ -3,7 +3,6 @@ import React from "react";
 const Pricing = () => {
   return (
     <div className="container mx-auto mt-30 mb-30">
-      {/* Header */}
       <div className="text-center flex gap-4 flex-col mb-10">
         <h1 className="font-extrabold text-5xl text-[#101727]">
           Simple, Transparent Pricing
@@ -13,11 +12,9 @@ const Pricing = () => {
         </p>
       </div>
 
-      {/* Cards */}
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 items-stretch">
-        {/* Starter */}
         <div className="card bg-base-100 shadow-sm h-full">
-          <div className="card-body flex flex-col h-full">
+          <div className="card-body flex flex-col h-full bg-neutral-50">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold">Starter</h2>
               <p className="text-base text-neutral-400">
@@ -44,7 +41,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                High-resolution image generation
+                Access to 20+ Resume Templates
               </li>
               <li>
                 <svg
@@ -61,7 +58,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Customizable style templates
+                Basic CV customization tools
               </li>
               <li>
                 <svg
@@ -78,21 +75,88 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Batch processing capabilities
+                Standard portfolio themes
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Export to PDF (Watermarked)
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Community support access
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Limited AI content generation
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                5GB secure cloud storage
               </li>
             </ul>
 
             <div className="mt-auto">
-              <button className="btn btn-primary w-full rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r">
+              <button className="btn btn-primary border-0 w-full rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r">
                 Get Started Free
               </button>
             </div>
           </div>
         </div>
 
-        {/* Pro */}
         <div className="card bg-linear-to-l from-[#9514fa] to-[#4f39f6] shadow-sm h-full">
-          <div className="card-body flex flex-col h-full">
+          <div className="card-body flex flex-col h-full ">
             <div className="flex justify-center p-2">
               <span className="badge badge-md badge-soft bg-amber-100 border border-amber-100 text-red-800 rounded-full -mt-11">
                 Most Popular
@@ -102,7 +166,7 @@ const Pricing = () => {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold text-white">Pro</h2>
               <p className="text-base text-white">
-                Perfect for getting started
+                Everything you need to grow
               </p>
               <p className="text-4xl text-white font-medium">
                 $29<span className="text-base text-neutral-200">/Month</span>
@@ -125,7 +189,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                High-resolution image generation
+                All Starter features included
               </li>
               <li>
                 <svg
@@ -142,7 +206,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Customizable style templates
+                100+ Pro Resume templates
               </li>
               <li>
                 <svg
@@ -159,7 +223,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Batch processing capabilities
+                ATS optimization tools
               </li>
               <li>
                 <svg
@@ -176,7 +240,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Advanced AI tools
+                Freelancer toolkit access
               </li>
               <li>
                 <svg
@@ -193,7 +257,75 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Priority support
+                Design assets bundle (Pro)
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Advanced AI writer tools
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Priority email support
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Remove all watermarks
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                50GB secure cloud storage
               </li>
             </ul>
 
@@ -207,9 +339,8 @@ const Pricing = () => {
           </div>
         </div>
 
-        {/* Enterprise */}
-        <div className="card bg-base-100 shadow-sm h-full">
-          <div className="card-body flex flex-col h-full">
+        <div className="card shadow-sm h-full bg-neutral-50">
+          <div className="card-body flex flex-col h-full ">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold">Enterprise</h2>
               <p className="text-base text-neutral-400">
@@ -236,7 +367,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                High-resolution image generation
+                All Pro features included
               </li>
               <li>
                 <svg
@@ -253,7 +384,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Customizable style templates
+                Unlimited Resume/CV creation
               </li>
               <li>
                 <svg
@@ -270,7 +401,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Batch processing capabilities
+                Developer Pro & SaaS kits
               </li>
               <li>
                 <svg
@@ -287,7 +418,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Dedicated support
+                Multi-user team accounts
               </li>
               <li>
                 <svg
@@ -304,12 +435,80 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                Custom integrations
+                Custom domain for portfolios
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Dedicated account manager
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                API access for e-learning platforms
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                E-learning platform priority
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Unlimited secure cloud storage
               </li>
             </ul>
 
             <div className="mt-auto">
-              <button className="btn btn-primary w-full rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r">
+              <button className="btn btn-primary border-0 w-full rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r">
                 Contact Sales
               </button>
             </div>
