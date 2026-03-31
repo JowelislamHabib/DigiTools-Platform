@@ -1,4 +1,4 @@
-import { LucideTrash2 } from "lucide-react";
+import { LucideTrash2, ShoppingBasket } from "lucide-react";
 import React from "react";
 
 const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
@@ -6,9 +6,21 @@ const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
     <div className="container mx-auto p-4 border border-neutral-100 rounded-2xl shadow-sm bg-white">
       <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
       {cartItem.length === 0 ? (
-        <p className="text-neutral-500 text-center py-10 text-lg">
-          no cart item found
-        </p>
+        <div className="flex flex-col items-center justify-center py-20 px-4 text-center">
+          <div className="bg-neutral-50 p-10 rounded-full mb-8 shadow-sm">
+            <ShoppingBasket
+              size={120}
+              className="text-neutral-200"
+              strokeWidth={1}
+            />
+          </div>
+          <h3 className="text-3xl font-extrabold text-[#101727]">
+            Your cart is empty
+          </h3>
+          <p className="text-[#627382] max-w-sm mt-4 text-lg leading-relaxed">
+            Start exploring to find the perfect tools for your needs!
+          </p>
+        </div>
       ) : (
         <div className="space-y-4">
           {cartItem.map((item) => (
