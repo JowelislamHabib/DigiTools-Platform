@@ -18,7 +18,7 @@ const Hero = () => {
               </div>
 
               <div className="flex flex-wrap flex-col">
-                <h1 className="text-5xl lg:text-7xl font-extrabold text-[#101727]">
+                <h1 className="text-5xl lg:text-7xl font-extrabold text-[#101727] leading-24">
                   Supercharge Your <br />
                   Digital Workflow
                 </h1>
@@ -31,7 +31,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex gap-4">
-                <button className="btn btn-primary rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-base font-normal">
+                <button className="btn btn-primary border-0 rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-base font-normal">
                   Explore Products
                 </button>
                 <button className="btn btn-outline btn-primary rounded-full text-base font-normal">
@@ -40,7 +40,24 @@ const Hero = () => {
               </div>
             </div>
             <div className="hero-right">
-              <img src={bannerImg} />
+              <a href="#" className="hover-3d my-12 mx-2 cursor-pointer">
+  
+  {/* content */}
+  <div className="card bg-transparent text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)]">
+<img src={bannerImg} />
+  </div>
+  
+  {/* 8 empty divs needed for the 3D effect */}
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</a>
+              
             </div>
           </div>
         </div>

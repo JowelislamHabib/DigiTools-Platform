@@ -7,7 +7,7 @@ const NavBar = ({ cartItem }) => {
       <div className="navbar bg-base-100 pt-6">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost border-0 lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -105,7 +105,7 @@ const NavBar = ({ cartItem }) => {
           </ul>
         </div>
         <div className="navbar-end gap-4">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div tabIndex={0} role="button" className="btn btn-ghost border-0 btn-circle">
             <div className="indicator">
               <LucideShoppingCart />
               <span className="badge badge-sm indicator-item bg-purple-600 text-white rounded-full">

@@ -16,10 +16,10 @@ const ReadyTransform = () => {
               Start your free trial today.
             </p>
             <div className=" flex gap-4 justify-center">
-              <button className="btn bg-white text-purple-500 rounded-full">
+              <button className="btn bg-white border-0 text-purple-500 rounded-full">
                 Explore Products
               </button>
-              <button className="btn btn-outline  text-white rounded-full">
+              <button className="btn btn-outline hover:bg-purple-500  text-white rounded-full">
                 Get Started
               </button>
             </div>

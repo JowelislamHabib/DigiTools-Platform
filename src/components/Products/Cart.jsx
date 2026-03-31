@@ -1,4 +1,4 @@
-import { LucideTrash2, ShoppingBasket } from "lucide-react";
+import { LucideTrash2, ShoppingBag } from "lucide-react";
 import React from "react";
 
 const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
@@ -8,7 +8,7 @@ const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
       {cartItem.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 px-4 text-center">
           <div className="bg-neutral-50 p-10 rounded-full mb-8 shadow-sm">
-            <ShoppingBasket
+            <ShoppingBag
               size={120}
               className="text-neutral-200"
               strokeWidth={1}
@@ -17,7 +17,7 @@ const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
           <h3 className="text-3xl font-extrabold text-[#101727]">
             Your cart is empty
           </h3>
-          <p className="text-[#627382] max-w-sm mt-4 text-lg leading-relaxed">
+          <p className="text-[#627382] mt-4 text-lg leading-relaxed">
             Start exploring to find the perfect tools for your needs!
           </p>
         </div>
@@ -42,7 +42,7 @@ const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
               <div className="flex items-center gap-6">
                 <button
                   onClick={() => handleRemoveFromCart(item.id)}
-                  className="btn btn-ghost text-error hover:bg-error/10 hover:text-error rounded-full btn-circle"
+                  className="btn btn-ghost border-0 text-error hover:bg-error/10 hover:text-error rounded-full btn-circle"
                 >
                   <LucideTrash2 size={20} />
                 </button>
@@ -58,7 +58,7 @@ const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
             </div>
             <button
               onClick={handleCheckout}
-              className="btn btn-primary w-full text-white rounded-full font-bold bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-lg border-none"
+              className="btn btn-primary w-full border-0 text-white rounded-full font-bold bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-lg border-none"
             >
               Proceed to Checkout
             </button>

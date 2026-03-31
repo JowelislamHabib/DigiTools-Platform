@@ -16,7 +16,7 @@ const GetStarted = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           <div className="card card-border bg-base-100 shadow-md">
             <div className="flex justify-end">
-              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-2 p-2 w-10 h-10 rounded-full">
+              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-4 p-2 w-10 h-10 rounded-full">
                 <p className="text-white text-center">01</p>
               </div>
             </div>
@@ -33,7 +33,7 @@ const GetStarted = () => {
           </div>
           <div className="card card-border bg-base-100 shadow-md">
             <div className="flex justify-end">
-              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-2 p-2 w-10 h-10 rounded-full">
+              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-4 p-2 w-10 h-10 rounded-full">
                 <p className="text-white text-center">02</p>
               </div>
             </div>
@@ -41,7 +41,7 @@ const GetStarted = () => {
               <div className="bg-purple-100 p-4 rounded-full w-fit">
                 <LucideBox size={64} color="#9514FA" />
               </div>
-              <h2 className="card-title text-2xl">Create Account</h2>
+              <h2 className="card-title text-2xl">Choose Products</h2>
               <p className="mb-22 text-base text-neutral-500">
                 Browse our catalog and select the tools
                 <br />
@@ -51,7 +51,7 @@ const GetStarted = () => {
           </div>
           <div className="card card-border bg-base-100 shadow-md">
             <div className="flex justify-end">
-              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-2 p-2 w-10 h-10 rounded-full">
+              <div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] m-4 p-2 w-10 h-10 rounded-full">
                 <p className="text-white text-center">03</p>
               </div>
             </div>
