@@ -52,13 +52,13 @@ const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
           <div className="border-t pt-4 mt-6">
             <div className="flex justify-between items-center mb-6">
               <span className="text-xl font-bold">Total:</span>
-              <span className="text-2xl font-extrabold text-primary">
+              <span className="text-2xl font-extrabold bg-linear-[-60deg] from-[#ff5858] to-[#f09819] bg-clip-text text-transparent">
                 ${cartItem.reduce((total, item) => total + item.price, 0)}
               </span>
             </div>
             <button
               onClick={handleCheckout}
-              className="btn btn-primary w-full border-0 text-white rounded-full font-bold bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-lg border-none"
+              className="btn text-white w-full border-0 rounded-full font-bold bg-linear-[-60deg] from-[#ff5858] to-[#f09819] hover:bg-linear-to-r from-[#f09819] to-[#4f39f6] text-lg border-none"
             >
               Proceed to Checkout
             </button>

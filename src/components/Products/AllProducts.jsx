@@ -19,9 +19,12 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
   };
 
   const handleRemoveFromCart = (id) => {
+    const itemToRemove = cartItem.find((item) => item.id === id);
     const updatedCart = cartItem.filter((item) => item.id !== id);
     setCartItem(updatedCart);
-    toast.error(`${item.name} removed from cart!`);
+    if (itemToRemove) {
+      toast.error(`${itemToRemove.name} removed from cart!`);
+    }
   };
 
   const handleCheckout = () => {
@@ -49,7 +52,7 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
             name="my_tabs_1"
             className={`tab rounded-full text-base font-bold w-36 sm:w-48 whitespace-nowrap ${
               activeTab === "products"
-                ? "bg-linear-to-l from-[#9514fa] to-[#4f39f6] text-white!"
+                ? "bg-linear-[-60deg] from-[#ff5858] to-[#f09819] text-white!"
                 : ""
             }`}
             aria-label="Products"
@@ -61,7 +64,7 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
             name="my_tabs_1"
             className={`tab rounded-full text-base font-bold w-36 sm:w-48 whitespace-nowrap ${
               activeTab === "cart"
-                ? "bg-linear-to-l from-[#9514fa] to-[#4f39f6] text-white!"
+                ? "bg-linear-[-60deg] from-[#ff5858] to-[#f09819] text-white!"
                 : ""
             }`}
              aria-label={`Cart (${cartItem.length})`}

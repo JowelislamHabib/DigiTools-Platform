@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-<div className="bg-linear-to-l from-[#9514fa] to-[#4f39f6]">
+<div className="bg-linear-[-60deg] from-[#ff5858] to-[#f09819]">
       <div className="container mx-auto px-4 md:px-0 ">
       <div className="p-8 md:p-12 mb-20 ">
         <div className="grid grid-cols-1 md:grid-cols-5 items-center">

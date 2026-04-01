@@ -4,7 +4,7 @@ const ReadyTransform = () => {
   return (
     <div>
       <div>
-        <div className="bg-base-200 bg-linear-to-l from-[#9514fa] to-[#4f39f6] pt-30 pb-30">
+        <div className="bg-base-200 bg-linear-[-60deg] from-[#ff5858] to-[#f09819] pt-30 pb-30">
           <div className="container mx-auto text-center space-y-4 p-2">
             <h1 className="font-extrabold text-4xl lg:text-5xl text-white">
               Ready to Transform Your Workflow?
@@ -16,10 +16,10 @@ const ReadyTransform = () => {
               Start your free trial today.
             </p>
             <div className=" flex gap-4 justify-center">
-              <button className="btn bg-white border-0 text-purple-500 rounded-full">
+              <button className="btn bg-white border-0 text-orange-500 rounded-full">
                 Explore Products
               </button>
-              <button className="btn btn-outline hover:bg-purple-500  text-white rounded-full">
+              <button className="btn btn-outline hover:bg-orange-500  text-white rounded-full">
                 Get Started
               </button>
             </div>

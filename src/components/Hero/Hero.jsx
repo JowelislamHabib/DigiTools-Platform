@@ -10,9 +10,9 @@ const Hero = () => {
         <div className="mt-20 mb-20">
           <div className="flex flex-wrap gap-4 lg:flex lg:justify-between lg:items-center">
             <div className="hero-left">
-              <div className="flex bg-primary-content w-fit rounded-full pt-2 pb-2 pl-4 pr-4 text-base mb-4">
+              <div className="flex bg-orange-50 w-fit rounded-full pt-2 pb-2 pl-4 pr-4 text-base mb-4">
                 <img src={dotImg} />
-                <p className="text-base pl-2 bg-linear-to-l from-[#9514fa] to-[#4f39f6] bg-clip-text text-transparent">
+                <p className="text-base pl-2 bg-linear-[-60deg] from-[#ff5858] to-[#f09819] bg-clip-text text-transparent">
                   New: AI-Powered Tools Available
                 </p>
               </div>
@@ -31,10 +31,10 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex gap-4">
-                <button className="btn btn-primary border-0 rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-base font-normal">
+                <button className="btn text-white border-0 rounded-full bg-linear-[-60deg] from-[#ff5858] to-[#f09819] hover:bg-linear-to-r from-[#f09819] to-[#4f39f6] text-base font-normal">
                   Explore Products
                 </button>
-                <button className="btn btn-outline btn-primary rounded-full text-base font-normal">
+                <button className="btn btn-outline text-orange-700 border-orange-700 rounded-full text-base font-normal">
                   <LucidePlay /> Watch Demo
                 </button>
               </div>

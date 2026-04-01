@@ -148,14 +148,14 @@ const Pricing = () => {
             </ul>
 
             <div className="mt-auto">
-              <button className="btn btn-primary border-0 w-full rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r">
+              <button className="btn text-white border-0 w-full rounded-full bg-linear-[-60deg] from-[#ff5858] to-[#f09819] hover:bg-linear-to-r">
                 Get Started Free
               </button>
             </div>
           </div>
         </div>
 
-        <div className="card bg-linear-to-l from-[#9514fa] to-[#4f39f6] shadow-sm h-full">
+        <div className="card bg-linear-[-60deg] from-[#ff5858] to-[#f09819] shadow-sm h-full">
           <div className="card-body flex flex-col h-full ">
             <div className="flex justify-center p-2">
               <span className="badge badge-md badge-soft bg-amber-100 border border-amber-100 text-red-800 rounded-full -mt-11">
@@ -180,7 +180,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -197,7 +197,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -214,7 +214,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -231,7 +231,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -248,7 +248,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -265,7 +265,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -282,7 +282,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -299,7 +299,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -316,7 +316,7 @@ const Pricing = () => {
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#fff"
                 >
                   <path
                     strokeLinecap="round"
@@ -331,7 +331,7 @@ const Pricing = () => {
 
             <div className="mt-auto">
               <button className="btn w-full rounded-full bg-white">
-                <span className="bg-linear-to-l from-[#9514fa] to-[#4f39f6] bg-clip-text text-transparent">
+                <span className="bg-linear-[-60deg] from-[#ff5858] to-[#f09819] bg-clip-text text-transparent">
                   Start Pro Trial
                 </span>
               </button>
@@ -508,7 +508,7 @@ const Pricing = () => {
             </ul>
 
             <div className="mt-auto">
-              <button className="btn btn-primary border-0 w-full rounded-full bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r">
+              <button className="btn text-white border-0 w-full rounded-full bg-linear-[-60deg] from-[#ff5858] to-[#f09819] hover:bg-linear-to-r">
                 Contact Sales
               </button>
             </div>
