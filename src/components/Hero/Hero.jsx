@@ -31,9 +31,9 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex gap-4">
-                <button className="btn text-white border-0 rounded-full bg-linear-[-60deg] from-[#ff5858] to-[#f09819] hover:bg-linear-to-r from-[#f09819] to-[#4f39f6] text-base font-normal">
+<a href="#product">                <button className="btn text-white border-0 rounded-full bg-linear-[-60deg] from-[#ff5858] to-[#f09819] hover:bg-linear-to-r from-[#f09819] to-[#4f39f6] text-base font-normal">
                   Explore Products
-                </button>
+                </button></a>
                 <button className="btn btn-outline text-orange-700 border-orange-700 rounded-full text-base font-normal">
                   <LucidePlay /> Watch Demo
                 </button>

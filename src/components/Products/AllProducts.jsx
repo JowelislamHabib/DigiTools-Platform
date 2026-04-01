@@ -34,7 +34,7 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
 
   return (
     <div className="container mx-auto mt-30 mb-30 space-y-4 px-4">
-      <div className="text-center flex gap-4 flex-col ">
+      <div id="product" className="text-center flex gap-4 flex-col ">
         <h1 className="font-extrabold text-4xl lg:text-5xl text-[#101727]">
           Premium Digital Tools
         </h1>
@@ -60,6 +60,7 @@ const AllProducts = ({ dataPromise, cartItem, setCartItem }) => {
             defaultChecked
           />
           <input
+            id="cart"
             type="radio"
             name="my_tabs_1"
             className={`tab rounded-full text-base font-bold w-36 sm:w-48 whitespace-nowrap ${
